@@ -1,0 +1,13 @@
+{
+"application": "Terminus",
+"repo":"https://github.com/AlissonMMenezes/Terminus.git",
+"developers":["alisson@dexter.com.br"],
+"deploy-sequence":{
+      "commands":[
+         "apt-get update",
+         "apt-get -f install python -y",
+         "apt-get -f install python-dev -y",
+         "apt-get -f install python-setuptools -y"
+        ]
+    }
+}

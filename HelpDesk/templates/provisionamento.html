@@ -1,0 +1,89 @@
+<html>
+<head><title>Help Desk - Dexter Courier</title></head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img class="logo-dexter" src="/static/img/logodexter.png" /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/provisionamento/">Provisionamento</a></li>
+      </ul>      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a><img class="dexter-right" src="/static/img/logo-dexter.png" /></a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<section class="container">
+    <div class="row">
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+        <span class="sr-only">40% Complete (success)</span>
+      </div>
+    </div>
+    <div class="col-lg-4">
+        <article class="panel panel-success">
+            <div class="panel panel-heading">Gitlab</div>
+            <div class="panel panel-body">  
+                <form>
+                  <div class="form-group">
+                    <label for="repositorio">Repositorio</label>
+                    <input type="text" class="form-control" id="repositorio" placeholder="Digite o nome do repositorio">
+                  </div>
+                  <div class="form-group">
+                    <label for="desenvolvedores">Desenvolvedores</label>
+                    <input type="text" class="form-control" id="desenvolvedores" placeholder="desen@dexter,desenv1@dexter,desenv2@dexter" title="os emails devem estar separados por virgula">
+                  </div>
+                </form>          
+            </div>
+        </article>
+    </div>
+    <div class="col-lg-4">
+        <article class="panel panel-info">
+            <div class="panel panel-heading">Jenkins</div>
+            <div class="panel panel-body">       
+                <form>
+                  <div class="form-group">
+                    <label for="repositorio">Nome da Job</label>
+                    <input type="text" class="form-control" id="job" placeholder="Digite o nome da Job do Jenkins">
+                  </div>
+                  <div class="form-group">
+                    <label for="branchs">Branchs</label>
+                    <input type="text" class="form-control" id="branches" placeholder="master,developer" title="as branchs devem estar separadas por virgula" />
+                  </div>
+                </form>     
+            </div>
+        </article>
+    </div>
+    <div class="col-lg-4">
+        <article class="panel panel-warning">
+            <div class="panel panel-heading">Docker</div>
+            <div class="panel panel-body">     
+                <form>
+                  <div class="form-group">
+                    <label for="repositorio">Containers</label>
+                    <input type="text" class="form-control container-domain" id="" placeholder="digite o dominio do seu projeto">
+                  </div>
+                  <button class="btn btn-default">Criar outro Container</button>
+                </form>         
+            </div>
+        </article>
+     </div>
+    </div>
+    <button class="btn btn-primary" id="novo-provisionamento">Criar</div>
+</section>
+<link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/static/css/main.css" />
+<script src="/static/js/jquery-1.12.0.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/novo_provisionamento.js"></script>
+</body>
+</html>

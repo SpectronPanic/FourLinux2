@@ -1,0 +1,11 @@
+# application.yml
+name: xupis_123
+developers:
+  - vandy2.rodrigues3@4linux.com.br
+  - vandy3.rodrigues3@prometeus.com.br
+webhook: http://192.168.201.127:8080/gitlab/build_now
+deploy-sequence:
+  - docker exec xupis_123 apt-get update
+  - docker exec xupis_123 apt-get install git -y
+  - docker exec xupis_123 apt-get install apache2 -y
+  - docker exec xupis_123 service apache2 restart

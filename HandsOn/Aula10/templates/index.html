@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head><title>aula10</title></head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">DexterOps</a>
+        </div>
+        <button class="btn btn-primary navbar-btn" id="enviar">Enviar</button>
+    </div>
+</nav>
+<section class="row"> <!-- teste -->
+    <article class="col-sm-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Cadastro da Aplicacao</div>
+            <div class="panel-body">
+                Name: <input type="text" id="app-name"
+                              placeholder="Digite o email dos desenv, separados por virgula"/>
+            </div>
+        </div>
+    </article>
+    <article class="col-sm-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">Desenvolvedores</div>
+            <div class="panel-body">
+                Email: <input type="text" id="desenv-list"
+                              placeholder="Digite o email dos desenv, separados por virgula"/>
+            </div>
+        </div>
+    </article>
+</section>
+<section class="row">
+    <article class="col-sm-6">
+        <div class="panel panel-success">
+            <div class="panel-heading">Sequencia de Comandos</div>
+            <div class="panel-body">
+                <textarea id="comandos" class="form-control" col="12" rows="10"></textarea>
+            </div>
+        </div>
+</section>
+<link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+<script language="javascript" src="/static/js/jquery.min.js"></script>
+<script language="javascript" src="/static/js/dexter.js"></script>
+</body>
+</html>

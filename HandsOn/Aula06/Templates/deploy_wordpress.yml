@@ -1,0 +1,6 @@
+deploy: wordpress
+command:
+  - apt-get clean all
+  - apt-get clean update
+  - apt-get install apache2 -y
+  - apt-get install php5 -y
